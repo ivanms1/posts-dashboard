@@ -5,11 +5,30 @@ import styles from "./Button.module.scss";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
-  icon: any;
+  noStyle?: boolean;
+  icon?: any;
 }
 
-function Button({ children, className, icon = null, ...props }: ButtonProps) {
+function Button({
+  children,
+  className,
+  noStyle,
+  icon = null,
+  ...props
+}: ButtonProps) {
   const Icon = icon;
+
+  if (noStyle) {
+    return (
+      <button
+        className={classNames(styles.NoStyleButton, className)}
+        {...props}
+      >
+        {children}
+      </button>
+    );
+  }
+
   return (
     <button className={classNames(styles.Button, className)} {...props}>
       {icon && <Icon className={styles.Icon} />}

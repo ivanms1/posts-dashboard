@@ -1,0 +1,49 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 var(--app-padding);
+
+  & .LogoButton {
+    & .Logo {
+      border-radius: 0.5rem;
+    }
+  }
+
+  & .RightSection {
+    align-items: center;
+    display: flex;
+    & .Links {
+      margin-right: 4rem;
+      & :not(:last-child) {
+        margin-right: 1.5rem;
+      }
+
+      & .Link {
+        color: var(--light-grey);
+        font-size: 1rem;
+        padding: 1rem 0;
+        &.isActive {
+          border-bottom: solid 2px var(--blue);
+          color: var(--blue);
+        }
+      }
+    }
+
+    & .SearchContainer {
+      display: flex;
+      & .SearchIcon {
+        fill: var(--light-blue);
+        height: 15px;
+        margin-right: 0.5rem;
+      }
+
+      & .Search {
+        border: none;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}

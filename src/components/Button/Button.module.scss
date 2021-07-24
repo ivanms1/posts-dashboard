@@ -1,5 +1,5 @@
 .Button {
-  background-color: #f9fafb;
+  background: transparent;
   border: solid 1px #b2b2b2;
   color: #b2b2b2;
   cursor: pointer;
@@ -14,4 +14,11 @@
     height: 10px;
     margin-right: 5px;
   }
+}
+
+.NoStyleButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
