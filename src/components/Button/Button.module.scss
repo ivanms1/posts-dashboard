@@ -1,7 +1,7 @@
 .Button {
   background: transparent;
-  border: solid 1px #b2b2b2;
-  color: #b2b2b2;
+  border: solid 1px var(--dim-grey);
+  color: var(--dim-grey);
   cursor: pointer;
   padding: 5px;
   width: 100%;

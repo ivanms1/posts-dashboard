@@ -7,26 +7,9 @@ import Button from "../../Button";
 import SearchIcon from "../../../assets/icons/search.svg";
 import PickyLogo from "../../../../public/assets/picky-logo.png";
 
-import styles from "./Navbar.module.scss";
+import { LINKS } from "../../../const";
 
-const LINKS = [
-  {
-    id: "products",
-    label: "Products",
-  },
-  {
-    id: "discussions",
-    label: "Discussions",
-  },
-  {
-    id: "blog",
-    label: "Blog",
-  },
-  {
-    id: "our-story",
-    label: "Our Story",
-  },
-];
+import styles from "./Navbar.module.scss";
 
 function Navbar() {
   const [activeLink, setActiveLink] = useState("discussions");

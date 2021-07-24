@@ -1,0 +1,7 @@
+.Sidebar {
+  padding: 1rem;
+  width: 20%;
+  & > :not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}

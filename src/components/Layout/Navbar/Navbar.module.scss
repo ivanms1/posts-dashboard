@@ -1,7 +1,7 @@
 .Navbar {
   display: flex;
   justify-content: space-between;
-  padding: 0 var(--app-padding);
+  margin-bottom: 3rem;
 
   & .LogoButton {
     & .Logo {
@@ -14,7 +14,7 @@
     display: flex;
     & .Links {
       margin-right: 4rem;
-      & :not(:last-child) {
+      & > :not(:last-child) {
         margin-right: 1.5rem;
       }
 

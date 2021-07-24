@@ -1,6 +1,7 @@
 import React from "react";
 
 import Navbar from "./Navbar";
+import Sidebar from "./Sidebar";
 
 import styles from "./Layout.module.scss";
 
@@ -12,7 +13,10 @@ function Layout({ children }: Layout) {
   return (
     <div className={styles.Layout}>
       <Navbar />
-      {children}
+      <div className={styles.ContentContainer}>
+        <Sidebar />
+        <div className={styles.Page}>{children}</div>
+      </div>
     </div>
   );
 }
