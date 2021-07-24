@@ -1,0 +1,17 @@
+.Button {
+  background-color: #f9fafb;
+  border: solid 1px #b2b2b2;
+  color: #b2b2b2;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+
+  & .Icon {
+    height: 10px;
+    margin-right: 5px;
+  }
+}
