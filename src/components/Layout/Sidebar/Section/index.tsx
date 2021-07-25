@@ -13,6 +13,13 @@ const arrowVariants: Variants = {
   closed: { rotate: 180, y: -4 },
 };
 
+const sidebarVariants: Variants = {
+  open: { opacity: 1, height: "auto" },
+  closed: { opacity: 0, height: 0 },
+};
+
+const sidebarTransition = { ease: "linear" };
+
 interface Section {
   section: {
     id: string;
@@ -58,9 +65,11 @@ function Section({ section, selectSection, currentSection }: Section) {
         <AnimatePresence initial={false}>
           {isSubmenuOpen && (
             <motion.div
-              initial={{ y: 200, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ opacity: 0 }}
+              initial="closed"
+              animate="open"
+              exit="closed"
+              transition={sidebarTransition}
+              variants={sidebarVariants}
               className={styles.SubSections}
             >
               {section.subSections.map((section) => (
