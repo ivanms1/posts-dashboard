@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
 
+  & .Category {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
   & .Title {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;

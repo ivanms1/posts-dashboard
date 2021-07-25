@@ -33,6 +33,7 @@ export interface Post {
 function Post({ post }: Post) {
   return (
     <div className={styles.Post}>
+      <p className={styles.Category}>{post.category.label}</p>
       <AuthorBox
         user={post.user}
         createdAt={post.createdAt}
