@@ -1,4 +1,4 @@
-# Post Dashboard UI
+# Posts Dashboard UI
 
 ## Getting Started
 
