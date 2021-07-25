@@ -34,10 +34,10 @@ function Comment({ comment }: Comment) {
       <div className={styles.Content}>{comment?.content}</div>
       {!!comment?.image_urls?.length && (
         <div className={styles.ImagesContainer}>
-          {comment?.image_urls?.map((image) => (
+          {comment?.image_urls?.map((image, index) => (
             <Image
               className={styles.Image}
-              key={image}
+              key={`${image}_${index}`}
               src={image}
               alt={image}
               width={328}

@@ -42,10 +42,10 @@ function Post({ post }: Post) {
       <p className={styles.Title}>{post.title}</p>
       <p className={styles.Content}>{post.content}</p>
       <div className={styles.ImagesContainer}>
-        {post?.image_urls?.map((image) => (
+        {post?.image_urls?.map((image, index) => (
           <Image
             className={styles.Image}
-            key={image}
+            key={`${image}_${index}`}
             src={image}
             alt={image}
             width={328}
