@@ -4,4 +4,8 @@
   & > :not(:last-child) {
     margin-bottom: 1rem;
   }
+
+  @media only screen and (max-width: 992px) {
+    display: none;
+  }
 }

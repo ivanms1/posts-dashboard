@@ -13,6 +13,7 @@ import styles from "./Navbar.module.scss";
 
 function Navbar() {
   const [activeLink, setActiveLink] = useState("discussions");
+
   return (
     <div className={styles.Navbar}>
       <Button type="button" className={styles.LogoButton} noStyle>
