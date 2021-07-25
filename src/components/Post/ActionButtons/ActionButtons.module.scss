@@ -1,0 +1,20 @@
+.ActionButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+
+  & .UpvoteButton {
+    align-items: center;
+    display: flex;
+    width: fit-content;
+  }
+
+  & .BookmarkButton {
+    width: fit-content;
+
+    & .BookmarkIcon {
+      fill: var(--dim-grey);
+      width: 12px;
+    }
+  }
+}

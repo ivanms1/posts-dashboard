@@ -1,0 +1,21 @@
+.Post {
+  display: flex;
+  flex-direction: column;
+
+  & .Title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  & .Content {
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+  }
+
+  & .ImagesContainer {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 328px);
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,29 @@
+.Comment {
+  margin-bottom: 1.5rem;
+
+  & .Content {
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  & .ImagesContainer {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 328px);
+    margin-bottom: 2rem;
+  }
+
+  & .ActionButtons {
+    display: flex;
+    gap: 0 1rem;
+    margin-bottom: 1rem;
+
+    & .ActionButton {
+      width: fit-content;
+    }
+  }
+
+  & .Replies {
+    margin-left: 2.5rem;
+  }
+}

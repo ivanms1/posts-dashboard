@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import classNames from "classnames";
 import { AnimatePresence, motion, Variants } from "framer-motion";
 
@@ -25,12 +25,6 @@ interface Section {
 
 function Section({ section, selectSection, currentSection }: Section) {
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
-
-  useEffect(() => {
-    if (!currentSection?.startsWith(section.id) && isSubmenuOpen) {
-      setIsSubmenuOpen(false);
-    }
-  }, [currentSection, isSubmenuOpen, section]);
 
   if (!!section.subSections) {
     const isSectionActive = currentSection?.startsWith(section.id);

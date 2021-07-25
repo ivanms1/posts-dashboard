@@ -7,4 +7,7 @@ module.exports = {
 
     return config;
   },
+  images: {
+    domains: ["i.pravatar.cc", "picky-app.s3-ap-southeast-1.amazonaws.com"],
+  },
 };

@@ -1,5 +1,9 @@
 import Head from "next/head";
 
+import Post from "../components/Post";
+
+import { POST } from "../const";
+
 import styles from "./index.module.scss";
 
 export default function Home() {
@@ -10,6 +14,7 @@ export default function Home() {
         <meta name="Picky" content="Picky Dashboard" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Post post={POST} />
     </div>
   );
 }

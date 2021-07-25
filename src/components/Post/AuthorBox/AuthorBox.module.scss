@@ -1,0 +1,46 @@
+.AuthorBox {
+  align-items: center;
+  display: flex;
+  margin-bottom: 0.5rem;
+
+  & .AvatarContainer {
+    margin-right: 0.3rem;
+    & .Avatar {
+      border-radius: 50%;
+    }
+  }
+
+  & .Details {
+    display: flex;
+    flex-direction: column;
+
+    & .UserDetails {
+      align-items: center;
+      display: flex;
+
+      & .Nickname {
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+      }
+
+      & .SkinType {
+        font-size: 0.7rem;
+      }
+    }
+
+    & .PostDetails {
+      align-items: center;
+      color: var(--dim-grey);
+      display: flex;
+      font-size: 0.8rem;
+      gap: 0 0.3rem;
+
+      & .Dot {
+        background-color: var(--dim-grey);
+        border-radius: 50%;
+        height: 5px;
+        width: 5px;
+      }
+    }
+  }
+}

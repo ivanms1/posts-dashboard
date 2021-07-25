@@ -1,8 +1,11 @@
 .Button {
+  align-items: center;
   background: transparent;
-  border: solid 1px var(--dim-grey);
+  border: solid 1px var(--border-grey);
   color: var(--dim-grey);
   cursor: pointer;
+  display: flex;
+  justify-content: center;
   padding: 5px;
   width: 100%;
 
@@ -11,8 +14,9 @@
   }
 
   & .Icon {
-    height: 10px;
-    margin-right: 5px;
+    fill: var(--dim-grey);
+    margin-right: 0.2rem;
+    width: 12px;
   }
 }
 

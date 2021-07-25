@@ -1,0 +1,13 @@
+.Comments {
+  display: flex;
+  flex-direction: column;
+
+  & .TotalBox {
+    background-color: #f2f2f2;
+    color: var(--dark-grey);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+  }
+}
