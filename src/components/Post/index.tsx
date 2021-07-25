@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 import ActionButtons from "./ActionButtons";
-
 import AuthorBox from "./AuthorBox";
 import Comments from "./Comments";
 

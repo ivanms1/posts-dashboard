@@ -1,8 +1,8 @@
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
+import MobileNavbar from "./MobileNavbar";
 
 import styles from "./Layout.module.scss";
-import MobileNavbar from "./MobileNavbar";
 
 interface Layout {
   children: React.ReactNode;
