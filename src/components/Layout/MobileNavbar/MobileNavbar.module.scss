@@ -1,0 +1,48 @@
+.MobileNavbar {
+  background-color: var(--grey);
+  display: flex;
+  height: calc(var(--mobile-navbar-height) - 1rem);
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  width: calc(100vw - 2rem);
+  z-index: 1;
+
+  & .RigthSide {
+    display: flex;
+    justify-content: center;
+    & .MenuButton {
+      margin-right: 1rem;
+      & .MenuIcon {
+        height: 25px;
+      }
+    }
+
+    & .LogoButton {
+      & .Logo {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  & .LeftSide {
+    align-items: center;
+    display: flex;
+    & .UseAppButton {
+      background-color: var(--blue);
+      border-radius: 1rem;
+      color: #fff;
+      font-size: 0.9rem;
+      margin-right: 1rem;
+      padding: 0.6rem;
+      text-transform: uppercase;
+    }
+
+    & .SearchButton {
+      & .SearchIcon {
+        fill: var(--light-blue);
+        height: 20px;
+      }
+    }
+  }
+}

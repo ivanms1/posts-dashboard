@@ -1,7 +1,13 @@
 .Navbar {
+  background-color: var(--grey);
   display: flex;
+  height: calc(var(--navbar-height) - 2rem);
   justify-content: space-between;
-  margin-bottom: 3rem;
+  padding: 1rem var(--app-padding);
+  position: fixed;
+  top: 0;
+  width: calc(100vw - var(--app-padding) * 2);
+  z-index: 1;
 
   & .LogoButton {
     & .Logo {

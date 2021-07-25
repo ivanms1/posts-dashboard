@@ -4,10 +4,22 @@
 
   & .ContentContainer {
     display: flex;
+    margin-top: var(--navbar-height);
 
     & .Page {
       padding: 0 3rem;
       width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    padding: 1rem;
+    & .ContentContainer {
+      margin-top: var(--mobile-navbar-height);
+      & .Page {
+        padding: 0;
+        width: 100%;
+      }
     }
   }
 }

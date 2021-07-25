@@ -26,4 +26,11 @@
   & .Replies {
     margin-left: 2.5rem;
   }
+
+  @media only screen and (max-width: 992px) {
+    & .ImagesContainer {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
