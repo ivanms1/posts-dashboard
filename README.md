@@ -1,10 +1,15 @@
-## Next.js Template
+# Post Dashboard UI
 
-- Typescript
-- Eslint
-- Stylelint
-- Prettier
-- Pre-commit hooks
-- Dependabot package updates
-- Sass
-- SVG support
+## Getting Started
+
+Install dependencies:
+
+```bash
+yarn
+```
+
+Run development server:
+
+```bash
+yarn dev
+```
